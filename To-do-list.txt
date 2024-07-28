@@ -1,0 +1,31 @@
+Summary of Steps Completed
+
+Loading and Preprocessing Data:
+    ✅ Loaded the movie dataset using multiple encodings to handle possible encoding issues.
+    ✅ Preprocessed the data:
+        .)Converted 'IMDB_Rating' to numeric.
+        .)Dropped rows with missing values in relevant columns.
+        .)Kept only the relevant columns: 'Series_Title', 'Released_Year', 'IMDB_Rating', 'Overview', 'Director', 'Genre'.
+        .)Saved the preprocessed data to a CSV file.
+Feature Engineering:
+    ✅ Loaded the preprocessed data.
+    ✅ Filled missing values in 'Released_Year', 'IMDB_Rating', and 'Director'.
+    ✅ Applied TF-IDF Vectorization on 'Overview'.
+    ✅ Scaled 'Released_Year' and 'IMDB_Rating'.
+    ✅ One-hot encoded 'Director'.
+    ✅ Extracted 'Series_Title' and 'Genre' for future use.
+    ✅ Combined all features into a single matrix.
+    ✅ Saved the combined features and metadata using joblib.
+Transformation Script:
+    ✅ Loaded the preprocessed data.
+    ✅ Loaded combined features and metadata from saved files.
+    ✅ Defined a function to transform new data using the loaded models.
+    ✅ Printed a message indicating the completion of data transformation.
+Data Visualization:
+    ✅ Loaded the preprocessed data.
+    ✅ Performed basic data exploration by printing the first few rows, data info, and statistical summary.
+    ✅ Created visualizations:
+        .)Histogram of IMDB Ratings.
+        .)Bar chart of movies by release year.
+        .)Bar chart of the top 10 directors by the number of movies.
+        .)Scatter plot of IMDB ratings by release year.
